@@ -4,7 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -21,6 +23,8 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "http-errors": "^2.0.1",
     "prisma": "^7.6.0",
     "tsx": "^4.21.0"
   }
